@@ -9,8 +9,13 @@
     "Response-Admininstrator":[],
     "ERROR-NO_PERMISSIONS_DE":"Dazu hast du keine Berechtigungen!",
     "ERROR-NO_PERMISSIONS_EN":"You have no permissions to do this!",
+    "ERROR-NO_RESULT_DE":"Es wurde keine Antwort zu deiner Frage gefunden, bitte versuche es später erneut",
+    "ERROR-NO_RESULT_EN":"No answer was found to your question, please try again later",
 
     "Profile":{
-        "Language":"EN"
+        "Language":"EN",
+        "Currency-Symbol":"$",
+        "Bank":0,
+        "Wallet":0
     }
 }

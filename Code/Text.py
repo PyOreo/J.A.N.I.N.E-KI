@@ -26,11 +26,15 @@ elif data['Profile']['Language'] == "EN":
 
 #ERROR
 global ERROR_NO_PERMISSIONS
+global ERROR_NO_RESULT
 ERROR_NO_PERMISSIONS = "-"
+ERROR_NO_RESULT = "-"
 if Lang == "DE":
     ERROR_NO_PERMISSIONS = data['ERROR-NO_PERMISSIONS_DE']
+    ERROR_NO_RESULT = data['ERROR-NO_RESULT_DE']
 elif Lang == "EN":
     ERROR_NO_PERMISSIONS = data['ERROR-NO_PERMISSIONS_EN']
+    ERROR_NO_RESULT = data['ERROR-NO_RESULT_EN']
 
 #Language-Verification
 def pr_language(lang):
@@ -96,6 +100,7 @@ def text():
                 print("")
                 text()
     else:
+        print(ERROR_NO_RESULT)
         print("")
         text()
 
