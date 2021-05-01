@@ -73,6 +73,7 @@ def text():
             text()
         #elif action == "<action>"
     elif Question in data['Commands']:
+        #Existing-Commands
         if Question == "/help":
             print("/help")
             print("")
