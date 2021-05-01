@@ -1,0 +1,10 @@
+{
+    "General-Permissions":["permissions.janine.ki.neutral", "permissions.janine.ki.manager", "permissions.janine.ki.administrator"],
+    "Permissions":[],
+    "Questions":[],
+    "Questions-Manager":[],
+    "Questions-Administator":[],
+    "Response":[],
+    "Response-Manager":[],
+    "Response-Admininstrator":[]
+}
