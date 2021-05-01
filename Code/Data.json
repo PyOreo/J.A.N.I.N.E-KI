@@ -11,7 +11,8 @@
     "ERROR-NO_PERMISSIONS_EN":"You have no permissions to do this!",
     "ERROR-NO_RESULT_DE":"Es wurde keine Antwort zu deiner Frage gefunden, bitte versuche es spaeter erneut",
     "ERROR-NO_RESULT_EN":"No answer was found to your question, please try again later",
-    "Commands":["/print", "/sayhey"],
+    "Commands":["/help"],
+    "Custom-Commands":["/print", "/sayhey"],
     "Actions":["print", "print"],
     "ARG":["HI", "HEY"],
 

@@ -62,12 +62,19 @@ def pr_permissions(permi):
 #Text-Input
 def text():
     Question = input(">>> ")
-    if Question in data['Commands']:
-        index = data['Commands'].index(Question)
+    if Question in data['Custom-Commands']:
+        #Custom-Commands:
+        index = data['Custom-Commands'].index(Question)
         action = data['Actions'][index]
         argument = data['ARG'][index]
         if action == "print":
             print(argument)
+            print("")
+            text()
+        #elif action == "<action>"
+    elif Question in data['Commands']:
+        if Question == "/help":
+            print("/help")
             print("")
             text()
     elif Question in data['Questions'] or Question in data['Questions-Manager'] or Question in data['Questions-Administator']:
