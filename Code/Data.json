@@ -1,10 +1,16 @@
 {
     "General-Permissions":["permissions.janine.ki.neutral", "permissions.janine.ki.manager", "permissions.janine.ki.administrator"],
-    "Permissions":[],
-    "Questions":[],
-    "Questions-Manager":[],
+    "Permissions":["permissions.janine.ki.neutral", "permissions.janine.ki.manager"],
+    "Questions":["MM"],
+    "Questions-Manager":["YY"],
     "Questions-Administator":[],
-    "Response":[],
-    "Response-Manager":[],
-    "Response-Admininstrator":[]
+    "Response":["MM"],
+    "Response-Manager":["YY"],
+    "Response-Admininstrator":[],
+    "ERROR-NO_PERMISSIONS_DE":"Dazu hast du keine Berechtigungen!",
+    "ERROR-NO_PERMISSIONS_EN":"You have no permissions to do this!",
+
+    "Profile":{
+        "Language":"EN"
+    }
 }
