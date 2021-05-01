@@ -12,9 +12,9 @@
     "ERROR-NO_RESULT_DE":"Es wurde keine Antwort zu deiner Frage gefunden, bitte versuche es spaeter erneut",
     "ERROR-NO_RESULT_EN":"No answer was found to your question, please try again later",
     "Commands":["/help"],
-    "Custom-Commands":["/print", "/sayhey"],
-    "Actions":["print", "print"],
-    "ARG":["HI", "HEY"],
+    "Custom-Commands":["/print", "/sayhey", "/pealy"],
+    "Actions":["print", "print", "print"],
+    "ARG":["HI", "HEY", "und Tobi :)"],
 
     "Profile":{
         "Language":"DE",
