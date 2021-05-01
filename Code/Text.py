@@ -62,7 +62,15 @@ def pr_permissions(permi):
 #Text-Input
 def text():
     Question = input(">>> ")
-    if Question in data['Questions'] or Question in data['Questions-Manager'] or Question in data['Questions-Administator']:
+    if Question in data['Commands']:
+        index = data['Commands'].index(Question)
+        action = data['Actions'][index]
+        argument = data['ARG'][index]
+        if action == "print":
+            print(argument)
+            print("")
+            text()
+    elif Question in data['Questions'] or Question in data['Questions-Manager'] or Question in data['Questions-Administator']:
         if Question in data['Questions']:
             Response = pr_permissions("permissions.janine.ki.neutral")
             if Response == True:
