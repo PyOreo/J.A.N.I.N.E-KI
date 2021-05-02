@@ -6,6 +6,7 @@ import time
 import os
 from os import system
 import tkinter
+import Text
 
 Lang = "DE"
 
@@ -39,21 +40,47 @@ elif Lang == "EN":
     ERROR_NOT_ENOUGH_MONEY = data['ERROR_NOT_ENOUGH_MONEY_EN']
     ERROR_NOT_ENOUGH_MONEY_IN_WALLET = data['ERROR_NOT_ENOUGH_MONEY_IN_WALLET_EN']
 
-def Enough_Money(amount_out: int, account):
+#Money-Verification
+def Enough_Money(amount: int, account: str):
     Bank = data['Profile']['Bank']
     Wallet = data['Profile']['Wallet']
     if account == "Bank":
-        if Bank >= amount_out:
+        if Bank >= amount:
             return True
         else:
             return False
     elif account == "Wallet":
-        if Wallet >= amount_out:
+        if Wallet >= amount:
             return True
         else:
             return False
     else:
         return False
 
-M = Enough_Money(100, "Bank")
-print(M)
+#Add_Money
+def Add_Money(amount_in: int, account: str):
+    data['Profile'][account] += amount_in
+    with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+        json.dump(data, f, indent=4)
+
+#Remove-Money
+def Remove_Money(amount_out: int, account: str):
+    M = Enough_Money(amount_out, account)
+    if M == True:
+        data['Profile'][account] -= amount_out
+        with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+            json.dump(data, f, indent=4)
+
+#Set-Money
+def Set_Money(amount: int, account: str):
+    data['Profile'][account] = amount
+    with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+        json.dump(data, f, indent=4)
+
+#Reset-Account
+def Reset_Account(account: str):
+    data['Profile'][account] = 0
+    with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+        json.dump(data, f, indent=4)
+
+

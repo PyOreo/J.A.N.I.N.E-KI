@@ -108,5 +108,3 @@ def text():
         print(ERROR_NO_RESULT)
         print("")
         text()
-
-text()

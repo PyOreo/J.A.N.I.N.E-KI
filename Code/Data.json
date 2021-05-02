@@ -1,29 +1,56 @@
 {
-    "General-Permissions":["permissions.janine.ki.neutral", "permissions.janine.ki.manager", "permissions.janine.ki.administrator"],
-    "Permissions":["permissions.janine.ki.neutral", "permissions.janine.ki.manager"],
-    "Questions":["MM"],
-    "Questions-Manager":["YY"],
-    "Questions-Administator":[],
-    "Response":["MM"],
-    "Response-Manager":["YY"],
-    "Response-Admininstrator":[],
-    "ERROR-NO_PERMISSIONS_DE":"Dazu hast du keine Berechtigungen!",
-    "ERROR-NO_PERMISSIONS_EN":"You have no permissions to do this!",
-    "ERROR-NO_RESULT_DE":"Es wurde keine Antwort zu deiner Frage gefunden, bitte versuche es spaeter erneut",
-    "ERROR-NO_RESULT_EN":"No answer was found to your question, please try again later",
-    "Commands":["/help"],
-    "Custom-Commands":["/print", "/sayhey"],
-    "Actions":["print", "print", "print"],
-    "ARG":["HI", "HEY"],
-    "ERROR_NOT_ENOUGH_MONEY_DE":"-",
-    "ERROR_NOT_ENOUGH_MONEY_IN_WALLET_DE":"-",
-    "ERROR_NOT_ENOUGH_MONEY_EN":"-",
-    "ERROR_NOT_ENOUGH_MONEY_IN_WALLET_EN":"-",
-
-    "Profile":{
-        "Language":"DE",
-        "Currency-Symbol":"$",
-        "Bank":100,
-        "Wallet":0
-    }
+ "General-Permissions": [
+  "permissions.janine.ki.neutral",
+  "permissions.janine.ki.manager",
+  "permissions.janine.ki.administrator"
+ ],
+ "Permissions": [
+  "permissions.janine.ki.neutral",
+  "permissions.janine.ki.manager"
+ ],
+ "Questions": [
+  "MM"
+ ],
+ "Questions-Manager": [
+  "YY"
+ ],
+ "Questions-Administator": [],
+ "Response": [
+  "MM"
+ ],
+ "Response-Manager": [
+  "YY"
+ ],
+ "Response-Admininstrator": [],
+ "ERROR-NO_PERMISSIONS_DE": "Dazu hast du keine Berechtigungen!",
+ "ERROR-NO_PERMISSIONS_EN": "You have no permissions to perform this!",
+ "ERROR-NO_RESULT_DE": "Es wurde keine Antwort zu deiner Frage gefunden, bitte versuche es spaeter erneut",
+ "ERROR-NO_RESULT_EN": "No answer was found to your question, please try again later",
+ "Commands": [
+  "/help"
+ ],
+ "Custom-Commands": [
+  "/print",
+  "/sayhey"
+ ],
+ "Actions": [
+  "print",
+  "print",
+  "print"
+ ],
+ "ARG": [
+  "HI",
+  "HEY"
+ ],
+ "ERROR_NOT_ENOUGH_MONEY_DE": "-",
+ "ERROR_NOT_ENOUGH_MONEY_IN_WALLET_DE": "-",
+ "ERROR_NOT_ENOUGH_MONEY_EN": "-",
+ "ERROR_NOT_ENOUGH_MONEY_IN_WALLET_EN": "-",
+ 
+ "Profile": {
+  "Language": "DE",
+  "Currency-Symbol": "$",
+  "Bank": 400,
+  "Wallet": 0
+ }
 }
