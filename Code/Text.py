@@ -36,17 +36,6 @@ elif Lang == "EN":
     ERROR_NO_PERMISSIONS = data['ERROR-NO_PERMISSIONS_EN']
     ERROR_NO_RESULT = data['ERROR-NO_RESULT_EN']
 
-#Language-Verification
-def pr_language(lang):
-    if lang == "DE":
-        DE = True
-        return DE
-    elif lang == "EN":
-        EN = True
-        return EN
-    else:
-        return False
-
 #Role-Verification
 def pr_permissions(permi):
     if permi == "permissions.janine.ki.neutral":
