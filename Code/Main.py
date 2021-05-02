@@ -10,6 +10,7 @@ from os import system
 import json
 import tkinter
 import Text
+import Games
 
 #Display license
 
@@ -19,5 +20,6 @@ def display_license():
     print(data)
     print("")
     Text.text()
+
 
 display_license()

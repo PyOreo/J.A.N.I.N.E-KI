@@ -95,5 +95,3 @@ def Balance():
     Wallet = data['Profile']['Wallet']
     Currency = data['Profile']['Currency-Symbol']
     print(f" Bank: {Bank}{Currency} \n\n Wallet: {Wallet}{Currency}")
-
-Balance()

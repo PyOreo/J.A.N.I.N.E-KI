@@ -39,8 +39,8 @@
         "HEY"
     ],
     "Profile": {
-        "Language": "EN",
-        "Currency-Symbol": "$",
+        "Language": "DE",
+        "Currency-Symbol": "\u20ac",
         "Bank": 400,
         "Wallet": 0
     }
