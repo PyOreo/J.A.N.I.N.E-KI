@@ -6,7 +6,6 @@ import time
 import os
 from os import system
 import tkinter
-import Text
 
 Lang = "DE"
 
@@ -40,7 +39,7 @@ elif Lang == "EN":
     ERROR_NOT_ENOUGH_MONEY = data['ERROR_NOT_ENOUGH_MONEY_EN']
     ERROR_NOT_ENOUGH_MONEY_IN_WALLET = data['ERROR_NOT_ENOUGH_MONEY_IN_WALLET_EN']
 
-def Enough_Money(amount_out, account):
+def Enough_Money(amount_out: int, account):
     Bank = data['Profile']['Bank']
     Wallet = data['Profile']['Wallet']
     if account == "Bank":
@@ -56,5 +55,5 @@ def Enough_Money(amount_out, account):
     else:
         return False
 
-M = Enough_Money("100", "Bank")
+M = Enough_Money(100, "Bank")
 print(M)
