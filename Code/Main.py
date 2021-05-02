@@ -19,7 +19,13 @@ def display_license():
         data = file.read()
     print(data)
     print("")
-    Text.text()
-
-
+    with open(fr'C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json') as f:
+        data = json.load(f)
+    if data['NEW'] == "False":
+        Text.text()
+    elif data['NEW'] == "True":
+        Text.talk()
+    else:
+        Text.talk()
+    
 display_license()

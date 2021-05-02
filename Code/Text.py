@@ -130,3 +130,81 @@ def text():
         print(ERROR_NO_RESULT)
         print("")
         text()
+
+def talk():
+    print("Oh Hey")
+    time.sleep(1)
+    print("Wer bist du?")
+    QUESTION_1 = input("< [MEIN NAME] > ")
+    print(f"Ok. Schön dich kennen zu lernen {QUESTION_1}.")
+    time.sleep(3)
+    print("Darf ich deinen Namen speichern?")
+    QUESTION_2 = input("<JA | NEIN> ")
+    if QUESTION_2 == "JA" or QUESTION_2 == "Ja" or QUESTION_2 == "ja":
+        data['Profile']['Name'] = QUESTION_2
+        data['NEW'] = "False"
+        with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+            json.dump(data, f, indent=4)
+    elif QUESTION_2 == "NEIN" or QUESTION_2 == "Nein" or QUESTION_2 == "nein":
+        print("Ok...")
+        data['NEW'] = "True"
+        with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+            json.dump(data, f, indent=4)
+    time.sleep(3)
+    print(f"Darf ich dich was fragen {QUESTION_1}?")
+    time.sleep(2)
+    QUESTION_3 = input("<Ja, klar | Nein> ")
+    if QUESTION_3 == "Ja, klar" or QUESTION_3 == "Ja" or QUESTION_3 == "ja" or QUESTION_3 == "ja, klar":
+        time.sleep(3)
+        print("Oh, sorry, ich habe gerade eine What'sapp bekommen...")
+        time.sleep(2)
+        print("Nun zu meiner Frage: Darf ich dich fragen, wie alt du bist?")
+        QUESTION_3_1 = input("<JA | NEIN | [DEIN ALTER]>")
+        Ja = ['JA', 'Ja', 'ja', 'Auf jeden Fall', 'Klar doch', 'Ok', 'ok']
+        Nein = ['NEIN', 'Nein', 'nein', 'Auf keinen Fall', 'Bitte nicht']
+        if QUESTION_3_1 in Ja:
+            time.sleep(2)
+            print("Und wie alt bist du?")
+            time.sleep(2)
+            QUESTION_3_2 = input("<[DEIN ALTER]> ")
+            time.sleep(3)
+            print("Ok, ich darf diese Informationen speichern, oder?")
+            time.sleep(2)
+            QUESTION_3_3 = input("<JA | NEIN> ")
+            if QUESTION_3_3 in Ja:
+                print("Ok, vielen Dank :)")
+                data['Profile']['Age'] = f"{QUESTION_3_2}"
+                with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+                    json.dump(data, f, indent=4)
+            elif QUESTION_3_3 in Nein:
+                time.sleep(3)
+                print("Ok, schade...")
+        elif QUESTION_3_1 in Nein:
+            time.sleep(2)
+            print("Ok, schade...")
+        else:
+            time.sleep(3)
+            print("Ok, ich darf diese Informationen speichern, oder?")
+            time.sleep(2)
+            QUESTION_3_3 = input("<JA | NEIN> ")
+            if QUESTION_3_3 in Ja:
+                print("Ok, vielen Dank :)")
+                data['Profile']['Age'] = f"{QUESTION_3_2}"
+                with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+                    json.dump(data, f, indent=4)
+            elif QUESTION_3_3 in Nein:
+                time.sleep(3)
+                print("Ok, schade...")
+    time.sleep(3)
+    print("Worüber wollen wir uns unterhalten?")
+    time.sleep(3)
+    QUESTION_4 = input("<[THEMA]> ")
+    time.sleep(2)
+    if QUESTION_4 == "Python" or QUESTION_4 == "Programmieren":
+        print("Da kann ich helfen, aber erzähl mir du doch etwas, ok?")
+    else:
+        print("Okay, darüber weiß ich zwar nicht so viel, aber du kannst mir ja etwas darüber erzählen, nicht war?")
+    time.sleep(2)
+    print("Oh... ich habe die Zeit vergessen, ich muss noch los, aber viel Spaß dir noch ;)")
+    time.sleep(5)
+    text()

@@ -38,7 +38,10 @@
     "ARG": [
         "HEY"
     ],
+    "NEW": "False",
     "Profile": {
+        "Name": "Ja",
+        "Age": "14",
         "Language": "DE",
         "Currency-Symbol": "\u20ac",
         "Bank": 400,
