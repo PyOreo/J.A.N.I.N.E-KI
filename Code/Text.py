@@ -141,7 +141,7 @@ def talk():
     print("Darf ich deinen Namen speichern?")
     QUESTION_2 = input("<JA | NEIN> ")
     if QUESTION_2 == "JA" or QUESTION_2 == "Ja" or QUESTION_2 == "ja":
-        data['Profile']['Name'] = QUESTION_2
+        data['Profile']['Name'] = QUESTION_1
         data['NEW'] = "False"
         with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
             json.dump(data, f, indent=4)
