@@ -30,15 +30,12 @@
         "/help"
     ],
     "Custom-Commands": [
-        "/print",
         "/sayhey"
     ],
     "Actions": [
-        "print",
         "print"
     ],
     "ARG": [
-        "HI",
         "HEY"
     ],
     "Profile": {

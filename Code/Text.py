@@ -48,6 +48,28 @@ def pr_permissions(permi):
         if "permissions.janine.ki.administrator" in data['Permissions']:
             return True
 
+#Add-Custom-Command
+def Add_Custom_Command(command, action, argument):
+    data['Custom-Commands'].append(command)
+    data['Actions'].append(action)
+    data['ARG'].append(argument)
+    with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+        json.dump(data, f, indent=4)
+    return True
+
+#Remove-Custom-Command
+def Remove_Custom_Command(command: str):
+    index = data['Custom-Commands'].index(command)
+    command = data['Custom-Commands'][index]
+    action = data['Actions'][index]
+    argument = data['ARG'][index]
+    data['Custom-Commands'].remove(command)
+    data['Actions'].remove(action)
+    data['ARG'].remove(argument)
+    with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
+        json.dump(data, f, indent=4)
+    return True
+
 #Text-Input
 def text():
     Question = input(">>> ")
