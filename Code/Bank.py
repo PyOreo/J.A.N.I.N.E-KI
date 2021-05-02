@@ -26,26 +26,6 @@ elif data['Profile']['Language'] == "EN":
     with open(fr"C:\Users\{os.getlogin()}\Documents\GitHub\J.A.N.I.N.E-KI\Code\Data.json", "w+") as f:
         json.dump(data, f, indent=4)
 
-#ERROR
-global ERROR_NO_PERMISSIONS
-global ERROR_NO_RESULT
-global ERROR_NOT_ENOUGHT_MONEY
-global ERROR_NOT_ENOUGHT_MONEY_IN_WALLET
-ERROR_NO_PERMISSIONS = "-"
-ERROR_NO_RESULT = "-"
-ERROR_NOT_ENOUGH_MONEY = "-"
-ERROR_NOT_ENOUGH_MONEY_IN_WALLET = "-"
-if Lang == "DE":
-    ERROR_NO_PERMISSIONS = data['ERROR-NO_PERMISSIONS_DE']
-    ERROR_NO_RESULT = data['ERROR-NO_RESULT_DE']
-    ERROR_NOT_ENOUGH_MONEY = data['ERROR_NOT_ENOUGH_MONEY_DE']
-    ERROR_NOT_ENOUGH_MONEY_IN_WALLET = data['ERROR_NOT_ENOUGH_MONEY_IN_WALLET_DE']
-elif Lang == "EN":
-    ERROR_NO_PERMISSIONS = data['ERROR-NO_PERMISSIONS_EN']
-    ERROR_NO_RESULT = data['ERROR-NO_RESULT_EN']
-    ERROR_NOT_ENOUGH_MONEY = data['ERROR_NOT_ENOUGH_MONEY_EN']
-    ERROR_NOT_ENOUGH_MONEY_IN_WALLET = data['ERROR_NOT_ENOUGH_MONEY_IN_WALLET_EN']
-
 #Money-Verification
 def Enough_Money(amount: int, account: str):
     Bank = data['Profile']['Bank']

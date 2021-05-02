@@ -35,17 +35,12 @@
     ],
     "Actions": [
         "print",
-        "print",
         "print"
     ],
     "ARG": [
         "HI",
         "HEY"
     ],
-    "ERROR_NOT_ENOUGH_MONEY_DE": "-",
-    "ERROR_NOT_ENOUGH_MONEY_IN_WALLET_DE": "-",
-    "ERROR_NOT_ENOUGH_MONEY_EN": "-",
-    "ERROR_NOT_ENOUGH_MONEY_IN_WALLET_EN": "-",
     "Profile": {
         "Language": "EN",
         "Currency-Symbol": "$",
